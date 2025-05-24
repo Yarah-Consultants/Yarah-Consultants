@@ -8,45 +8,71 @@
 </head>
 <body>
 
-  <header>
-    <nav class="navbar" aria-label="Main Navigation">
-      <div class="logo-nav">
-        <a href="#home"><img src="logo-crop.jpg" alt="Yarah Logo" /></a>
-      </div>
-      <ul class="nav-links" id="navLinks">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About us</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#contact" class="contact-btn">Contact us</a></li>
-      </ul>
-      <div class="mobile-menu" id="mobileMenu" aria-label="Toggle navigation">
-        <div class="hamburger"></div>
-        <div class="hamburger"></div>
-        <div class="hamburger"></div>
-      </div>
-    </nav>
-  </header>
+<header>
+  <!-- Main navigation bar -->
+  <nav class="navbar" aria-label="Main Navigation">
+    
+    <!-- Logo section linking back to the top/home -->
+    <div class="logo-nav">
+      <a href="#home">
+        <img src="logo-crop.jpg" alt="Yarah Logo" />
+      </a>
+    </div>
 
-    <section class="hero" id="home">
-      <div class="overlay"></div>
-      <div class="hero-content">
-        <h1>YARAH CONSULTANTS</h1>
-        <h3>We work to represent you</h3>
-        <p>
-          We are dedicated to providing top-tier representation to those seeking
-          to boost your presence in the Middle East and Beyond, We also assist in industrial license and setup.
-        </p>
-        <a href="#" class="cta-btn">Get Started Today</a>
-      </div>
-    </section>
+    <!-- Navigation links list -->
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About us</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact" class="contact-btn">Contact us</a></li>
+    </ul>
 
-    <section class="about-container" id="about">
+    <!-- Mobile menu toggle button (hamburger icon) -->
+    <div class="mobile-menu" id="mobileMenu" aria-label="Toggle navigation">
+      <!-- Three bars of the hamburger icon -->
+      <div class="hamburger"></div>
+      <div class="hamburger"></div>
+      <div class="hamburger"></div>
+    </div>
+
+  </nav>
+</header>
+
+
+<section class="hero" id="home">
+  <!-- Overlay for darkening or tinting the background image/video -->
+  <div class="overlay"></div>
+
+  <!-- Main content of the hero section -->
+  <div class="hero-content">
+    <!-- Main heading -->
+    <h1>YARAH CONSULTANTS</h1>
+
+    <!-- Subheading -->
+    <h3>We work to represent you</h3>
+
+    <!-- Short description -->
+    <p>
+      Dedicated to providing top-tier representation for businesses aiming to expand their presence in the Middle East and beyond.  
+      We also assist with industrial licensing and setup.
+    </p>
+
+    <!-- Call-to-action button -->
+    <a href="#" class="cta-btn">Get Started Today</a>
+  </div>
+</section>
+
+
+<section class="about-container" id="about">
+  <!-- Background or decorative image div -->
   <div class="about-image"></div>
+
+  <!-- Content block with heading, paragraph, and link -->
   <div class="about-content">
     <h1>About Yarah Consultants</h1>
     <p>
-      Yarah Consultants are for companies based outside the Middle East who have an interest in the Middle East to boost their presence not necessarily in the Middle East
-      but also in regions like Africa and Asia. Because we are strategically located in the UAE, it's easier for us to travel to these regions too, to represent companies. We help you get established here in this region.
+      Yarah Consultants assist companies outside the Middle East interested in expanding their presence not only here but also in regions like Africa and Asia. 
+      Strategically located in the UAE, we can easily travel and represent companies across these areas. We help you get established in this dynamic region.
     </p>
     <a href="#" class="learn-more-btn">
       Learn More <span class="arrow">→</span>
@@ -55,243 +81,443 @@
 </section>
 
 
-    <section class="services-container" id="services">
-      <div class="services-header">
-        <h1>Our Services</h1>
-      </div>
-      <div class="services-grid">
-        <!-- Repeatable service cards -->
-        <div class="service-card">
-          <img src="Market Entry.jpg" alt="Market Entry & Expansion" class="service-image">
-          <div class="service-overlay"><h2 class="service-title">Market Entry & Expansion</h2></div>
-        </div>
-        <div class="service-card">
-          <img src="Business Representation.jpg" alt="Business Representation" class="service-image">
-          <div class="service-overlay"><h2 class="service-title">Business Representation</h2></div>
-        </div>
-        <div class="service-card">
-          <img src="Strategic Partnerships.jpg" alt="Strategic Partnerships" class="service-image">
-          <div class="service-overlay"><h2 class="service-title">Strategic Partnerships</h2></div>
-        </div>
-        <div class="service-card">
-          <img src="Assistance.jpg" alt="Manufacturing Setup Assistance" class="service-image">
-          <div class="service-overlay"><h2 class="service-title">Manufacturing Setup Assistance</h2></div>
-        </div>
-        <div class="service-card">
-          <img src="Marketing & Promotion.jpg" alt="Marketing & Promotion" class="service-image">
-          <div class="service-overlay"><h2 class="service-title">Marketing & Promotion</h2></div>
-        </div>
-        <div class="service-card">
-          <img src="Business Representation.jpg" alt="Regional Consultancy" class="service-image">
-          <div class="service-overlay"><h2 class="service-title">Regional Consultancy</h2></div>
-        </div>
-      </div>
-    </section>
 
-    <section class="why-choose-us">
-      <div class="overlay">
-        <h1 class="section-title">Why Choose Us?</h1>
-        <div class="reasons">
-          <div class="reason fade-in delay-1">Middle East Expertise</div>
-          <div class="reason fade-in delay-2">Strong Business Networks</div>
-          <div class="reason fade-in delay-3">Cost-Effective Expansion</div>
-          <div class="reason fade-in delay-4">On-Ground Local Support</div>
-        </div>
-      </div>
-    </section>
+<!-- Services Section -->
+<section class="services-container" id="services">
 
-   <section class="operate-section">
+  <!-- Header for the services section -->
+  <div class="services-header">
+    <h1>Our Services</h1>
+  </div>
+
+  <!-- Grid container holding individual service cards -->
+  <div class="services-grid">
+
+    <!-- Single service card: includes image and overlay title -->
+    <div class="service-card">
+      <!-- Service image -->
+      <img src="Market Entry.jpg" alt="Market Entry & Expansion" class="service-image">
+      <!-- Overlay that likely appears on hover with service title -->
+      <div class="service-overlay">
+        <h2 class="service-title">Market Entry & Expansion</h2>
+      </div>
+    </div>
+
+    <!-- Repeat service cards for each offered service -->
+    <div class="service-card">
+      <img src="Business Representation.jpg" alt="Business Representation" class="service-image">
+      <div class="service-overlay">
+        <h2 class="service-title">Business Representation</h2>
+      </div>
+    </div>
+
+    <div class="service-card">
+      <img src="Strategic Partnerships.jpg" alt="Strategic Partnerships" class="service-image">
+      <div class="service-overlay">
+        <h2 class="service-title">Strategic Partnerships</h2>
+      </div>
+    </div>
+
+    <div class="service-card">
+      <img src="Assistance.jpg" alt="Manufacturing Setup Assistance" class="service-image">
+      <div class="service-overlay">
+        <h2 class="service-title">Manufacturing Setup Assistance</h2>
+      </div>
+    </div>
+
+    <div class="service-card">
+      <img src="Marketing & Promotion.jpg" alt="Marketing & Promotion" class="service-image">
+      <div class="service-overlay">
+        <h2 class="service-title">Marketing & Promotion</h2>
+      </div>
+    </div>
+
+    <div class="service-card">
+      <img src="Business Representation.jpg" alt="Regional Consultancy" class="service-image">
+      <div class="service-overlay">
+        <h2 class="service-title">Regional Consultancy</h2>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- Section: Why Choose Us? -->
+<section class="why-choose-us">
+
+  <!-- Overlay container for background styling, such as semi-transparent layer -->
+  <div class="overlay">
+
+    <!-- Section title -->
+    <h1 class="section-title">Why Choose Us?</h1>
+
+    <!-- Container for listing reasons -->
+    <div class="reasons">
+
+      <!-- Each reason has fade-in animation with staggered delays for a smooth entrance -->
+      <div class="reason fade-in delay-1">Middle East Expertise</div>
+      <div class="reason fade-in delay-2">Strong Business Networks</div>
+      <div class="reason fade-in delay-3">Cost-Effective Expansion</div>
+      <div class="reason fade-in delay-4">On-Ground Local Support</div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- Operate Section: Showcases where the company operates -->
+<section class="operate-section">
+
+  <!-- Section heading with title and arrow icon -->
   <div class="operate-heading">
     <h2>Where We Operate</h2>
     <span class="arrow">➔</span>
   </div>
 
+  <!-- Container for the video map -->
   <div class="map-container">
+
+    <!--
+      Background video showing the operational area (United Arab Emirates)
+      Attributes:
+      - autoplay: video plays automatically when loaded
+      - muted: video plays without sound (required for autoplay on most browsers)
+      - loop: video repeats continuously
+      - playsinline: allows video to play inline on mobile devices instead of fullscreen
+    -->
     <video autoplay muted loop playsinline class="map-video">
       <source src="UNITED ARAB EMIRATES.mp4" type="video/mp4" />
+      <!-- Fallback message if browser does not support video tag -->
       Your browser does not support the video tag.
     </video>
+
+    <!--
+      Overlay div for styling purposes,
+      can be used to add color tint, gradients, or darken the video for better text visibility
+    -->
     <div class="map-overlay"></div>
+
   </div>
 </section>
 
+
+<!-- Contact Section -->
 <section class="contact-section" id="contact">
+
+  <!-- Image representing contact or support -->
   <div class="contact-image">
     <img src="contact.png" alt="Woman with laptop" />
   </div>
+
+  <!-- Contact Form Container -->
   <div class="contact-form">
     <h2>Get In Touch</h2>
+
+    <!--
+      Form setup:
+      - action points to formsubmit.co service with the recipient email
+      - method POST to send data securely
+    -->
     <form action="https://formsubmit.co/jamesprince@yarahdubai.com" method="POST">
+
+      <!-- User's name input, required -->
       <input type="text" name="Name" placeholder="Your Name" required />
+
+      <!-- User's email input, required and validated as email -->
       <input type="email" name="Email" placeholder="Email Address" required />
+
+      <!-- Optional company name input -->
       <input type="text" name="Company" placeholder="Company Name" />
+
+      <!-- Message textarea, required, with 4 rows -->
       <textarea name="Message" placeholder="Say something..." rows="4" required></textarea>
 
-      <!-- Optional hidden fields -->
+      <!-- Hidden inputs for form configuration -->
+
+      <!-- Email subject line for the received message -->
       <input type="hidden" name="_subject" value="New Contact from Website">
+
+      <!-- Disable captcha validation for easier submission -->
       <input type="hidden" name="_captcha" value="false">
+
+      <!-- Set email template style to table format -->
       <input type="hidden" name="_template" value="table">
+
+      <!-- Redirect user to a thank you page after submission -->
       <input type="hidden" name="_next" value="https://yourdomain.com/thank-you.html">
 
+      <!-- Submit button to send form data -->
       <button type="submit">Submit</button>
     </form>
   </div>
+
 </section>
 
-    <section class="yarah-container">
-      <div class="yarah-content">
-        <div class="yarah-text-section">
-          <h2>YARAH</h2>
-          <h2>Consultants</h2>
-          <p>Help your business get established</p>
-        </div>
-        <div class="yarah-images-section">
-          <div class="yarah-image-box yarah-image-top"><img src="last1.png" alt="Business people joining hands"></div>
-          <div class="yarah-image-box yarah-image-bottom"><img src="last2.png" alt="Group of business professionals"></div>
-          <div class="yarah-image-box yarah-image-right"><img src="last3.png" alt="Team collaboration"></div>
-        </div>
-      </div>
-    </section>
 
-  <footer class="card-container">
-    <div class="business-card">
-      <div class="decorative-elements">
-        <div class="circle"></div><div class="circle"></div><div class="circle"></div>
+  <!-- Yarah Section: Hero or Feature Highlight -->
+<section class="yarah-container">
+
+  <!-- Wrapper for Text and Images -->
+  <div class="yarah-content">
+
+    <!-- Left Side: Text Introduction -->
+    <div class="yarah-text-section">
+      <!-- Company Title -->
+      <h2>YARAH</h2>
+      <h2>Consultants</h2>
+      <!-- Supporting Tagline -->
+      <p>Help your business get established</p>
+    </div>
+
+    <!-- Right Side: Image Layout -->
+    <div class="yarah-images-section">
+
+      <!-- Top Image Box -->
+      <div class="yarah-image-box yarah-image-top">
+        <img src="last1.png" alt="Business people joining hands">
       </div>
-      <div class="logo-section">
-        <div class="logo"><img src="logo-crop.jpg" alt="Yarah Consultants Logo"></div>
-        <div class="company-info">
-          <div class="company-name"><h1>YARAH CONSULTANTS</h1></div>
-          <div class="tagline">We work to Represent you.</div>
-        </div>
+
+      <!-- Bottom Image Box -->
+      <div class="yarah-image-box yarah-image-bottom">
+        <img src="last2.png" alt="Group of business professionals">
+      </div>
+
+      <!-- Right Image Box -->
+      <div class="yarah-image-box yarah-image-right">
+        <img src="last3.png" alt="Team collaboration">
+      </div>
+
+    </div> <!-- End of yarah-images-section -->
+
+  </div> <!-- End of yarah-content -->
+
+</section>
+
+
+<!-- Footer Section -->
+<footer class="card-container">
+
+  <!-- Business Card Style Layout -->
+  <div class="business-card">
+
+    <!-- Decorative Circles (top-left like a UI window) -->
+    <div class="decorative-elements">
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+    </div>
+
+    <!-- Company Branding Section -->
+    <div class="logo-section">
+      <!-- Company Logo Image -->
+      <div class="logo">
+        <img src="logo-crop.jpg" alt="Yarah Consultants Logo">
       </div>
       
-      <div class="contact-info">
-        <div class="contact-item">
-          <span class="contact-label">Email:</span>
-          <span class="contact-value">
-            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=jamesprince@yarahdubai.com" target="_blank">jamesprince@yarahdubai.com</a>
-          </span>
+      <!-- Company Name and Tagline -->
+      <div class="company-info">
+        <div class="company-name">
+          <h1>YARAH CONSULTANTS</h1>
         </div>
-        <div class="contact-item">
-          <span class="contact-label">Number:</span>
-          <span class="contact-value"><a href="tel:+97156557465">+97156 557 7465</a></span>
-        </div>
+        <div class="tagline">We work to Represent you.</div>
       </div>
-      <div class="copyright">© 2025 Yarah Consultants</div>
     </div>
-  </footer>
 
-  <script>
-    // Mobile menu toggle
-    const mobileMenu = document.getElementById('mobileMenu');
-    const navLinks = document.getElementById('navLinks');
+    <!-- Contact Information Section -->
+    <div class="contact-info">
 
-    mobileMenu.addEventListener('click', () => {
-      mobileMenu.classList.toggle('active');
-      navLinks.classList.toggle('active');
+      <!-- Email Contact -->
+      <div class="contact-item">
+        <span class="contact-label">Email:</span>
+        <span class="contact-value">
+          <!-- Opens Gmail compose window with recipient pre-filled -->
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=jamesprince@yarahdubai.com" target="_blank">
+            jamesprince@yarahdubai.com
+          </a>
+        </span>
+      </div>
+
+      <!-- Phone Number (Click-to-call) -->
+      <div class="contact-item">
+        <span class="contact-label">Number:</span>
+        <span class="contact-value">
+          <a href="tel:+97156557465">+97156 557 7465</a>
+        </span>
+      </div>
+
+    </div> <!-- End of contact-info -->
+
+    <!-- © Copyright Notice -->
+    <div class="copyright">
+      © 2025 Yarah Consultants
+    </div>
+
+  </div> <!-- End of business-card -->
+
+</footer>
+
+
+ <script>
+  // Mobile menu toggle functionality
+  const mobileMenu = document.getElementById('mobileMenu'); // The hamburger icon
+  const navLinks = document.getElementById('navLinks');     // The container with navigation links
+
+  // When the hamburger menu is clicked, toggle the 'active' class on both elements
+  mobileMenu.addEventListener('click', () => {
+    mobileMenu.classList.toggle('active');
+    navLinks.classList.toggle('active');
+  });
+
+  // Change navbar background on scroll
+  window.addEventListener('scroll', () => {
+    const navbar = document.querySelector('.navbar');
+
+    // Use slightly more opaque background when user scrolls
+    navbar.style.background = window.scrollY > 50 
+      ? 'rgba(0, 37, 96, 0.98)' 
+      : 'rgba(0, 37, 96, 0.95)';
+
+    // Add blur effect to the background for modern UI appearance
+    navbar.style.backdropFilter = 'blur(15px)';
+  });
+
+  // Ripple effect on nav link clicks
+  document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', function (e) {
+      // Create a new span element for the ripple
+      const ripple = document.createElement('span');
+
+      // Get dimensions and position of the clicked link
+      const rect = this.getBoundingClientRect();
+      const size = Math.max(rect.width, rect.height);
+      const x = e.clientX - rect.left - size / 2;
+      const y = e.clientY - rect.top - size / 2;
+
+      // Style the ripple effect
+      ripple.style.cssText = `
+        position: absolute;
+        width: ${size}px;
+        height: ${size}px;
+        left: ${x}px;
+        top: ${y}px;
+        background: rgba(213, 189, 80, 0.3);  /* Light gold tone */
+        border-radius: 50%;
+        transform: scale(0);
+        animation: ripple 0.6s ease-out;
+        pointer-events: none;
+      `;
+
+      // Add the ripple to the link and remove it after animation completes
+      this.appendChild(ripple);
+      setTimeout(() => ripple.remove(), 600);
     });
+  });
 
-    // Navbar background on scroll
-    window.addEventListener('scroll', () => {
-      const navbar = document.querySelector('.navbar');
-      navbar.style.background = window.scrollY > 50 ? 'rgba(0, 37, 96, 0.98)' : 'rgba(0, 37, 96, 0.95)';
-      navbar.style.backdropFilter = 'blur(15px)';
-    });
-
-    // Ripple effect on nav links
-    document.querySelectorAll('.nav-links a').forEach(link => {
-      link.addEventListener('click', function (e) {
-        const ripple = document.createElement('span');
-        const rect = this.getBoundingClientRect();
-        const size = Math.max(rect.width, rect.height);
-        const x = e.clientX - rect.left - size / 2;
-        const y = e.clientY - rect.top - size / 2;
-
-        ripple.style.cssText = `
-          position: absolute;
-          width: ${size}px;
-          height: ${size}px;
-          left: ${x}px;
-          top: ${y}px;
-          background: rgba(213, 189, 80, 0.3);
-          border-radius: 50%;
-          transform: scale(0);
-          animation: ripple 0.6s ease-out;
-          pointer-events: none;
-        `;
-
-        this.appendChild(ripple);
-        setTimeout(() => ripple.remove(), 600);
-      });
-    });
-
-    // Ripple animation style
-    const style = document.createElement('style');
-    style.textContent = `
-      @keyframes ripple {
-        to {
-          transform: scale(2);
-          opacity: 0;
-        }
+  // 🎞️ Define the ripple keyframe animation
+  const style = document.createElement('style');
+  style.textContent = `
+    @keyframes ripple {
+      to {
+        transform: scale(2);
+        opacity: 0;
       }
-    `;
-    document.head.appendChild(style);
-  </script>
+    }
+  `;
+  document.head.appendChild(style);
+</script>
 
 <script>
+  // Select the navigation bar element
   const navbar = document.querySelector(".navbar");
 
+  // Add a scroll event listener to the window object
   window.addEventListener("scroll", () => {
+    // Check if the vertical scroll distance is greater than 50 pixels
     if (window.scrollY > 50) {
+      // If the page is scrolled down more than 50px, add the 'scrolled' class to the navbar
+      // This class is typically used to apply different styles (e.g., background color, shadow)
       navbar.classList.add("scrolled");
     } else {
+      // If the scroll is at the top (less than or equal to 50px), remove the 'scrolled' class
       navbar.classList.remove("scrolled");
     }
   });
 </script>
 
+
 <script>
+  // Select the "About" section container
   const aboutSection = document.querySelector('.about-container');
 
+  // Create a new IntersectionObserver to monitor when the about section enters the viewport
   const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
+      // Check if the about section is at least 30% visible
       if (entry.isIntersecting) {
+        // Add a class to trigger an animation or style change when the section becomes visible
         aboutSection.classList.add('about-visible');
+
+        // Stop observing the about section after it becomes visible once (for performance and to avoid retriggering)
         observer.unobserve(aboutSection);
       }
     });
-  }, { threshold: 0.3 });
+  }, { 
+    // Set the threshold to 0.3 (30% of the element must be visible for the callback to fire)
+    threshold: 0.3 
+  });
 
+  // Start observing the about section
   observer.observe(aboutSection);
 </script>
 
 <script>
+  // Select the section/container that holds all the service cards
   const serviceSection = document.querySelector('.services-container');
+
+  // Select all individual service cards (though not directly used in this script)
   const serviceCards = document.querySelectorAll('.service-card');
 
+  // Create a new IntersectionObserver to detect when the service section becomes visible in the viewport
   const serviceObserver = new IntersectionObserver(entries => {
     entries.forEach(entry => {
+      // Check if the section is at least partially in view
       if (entry.isIntersecting) {
+        // Add a class to trigger animations or styles when the section is visible
         serviceSection.classList.add('services-visible');
+
+        // Stop observing after the animation is triggered (runs only once)
         serviceObserver.unobserve(serviceSection);
       }
     });
-  }, { threshold: 0.2 });
+  }, { 
+    // Trigger the observer when 20% of the section is visible
+    threshold: 0.2 
+  });
 
+  // Start observing the service section
   serviceObserver.observe(serviceSection);
 </script>
 
 <script>
+  // Selects the element with the class 'services-grid' and stores it in the variable 'grid'
   const grid = document.querySelector('.services-grid');
+
+  // Selects all elements with the class 'service-card' and stores them as a NodeList in 'cards'
   const cards = document.querySelectorAll('.service-card');
 
+  // Loop through each service card
   cards.forEach(card => {
+    // Add an event listener for when the mouse enters the card
     card.addEventListener('mouseenter', () => {
+      // When the mouse enters, add the class 'hover-active' to the grid
+      // This could be used to apply a visual effect to the entire grid when any card is hovered
       grid.classList.add('hover-active');
     });
 
+    // Add an event listener for when the mouse leaves the card
     card.addEventListener('mouseleave', () => {
+      // When the mouse leaves, remove the class 'hover-active' from the grid
       grid.classList.remove('hover-active');
     });
   });
