@@ -2042,13 +2042,13 @@
             }
 
             .contact-label {
-              font-size: 1rem;
+              font-size: 0.6rem;
               margin-bottom: 6px;
               min-width: unset;
             }
 
             .contact-value a {
-              font-size: 0.95rem;
+              font-size: 0.6rem;
               word-break: break-word;
               color: white;
               text-decoration: none;
@@ -2072,7 +2072,7 @@
             }
 
             .company-name h1 {
-              font-size: 1.4rem;
+              font-size: 1rem;
               text-align: center;
               margin: 0;
             }
