@@ -1339,8 +1339,7 @@
           display: flex;
           flex-direction: column;
           justify-content: center;
-          text-align: left;
-          padding-left: 40px;
+          text-align: center;
           animation: fadeInUp 1.5s ease forwards;
           z-index: 2;
         }
@@ -1638,13 +1637,17 @@
         }
 
         .logo:hover {
-            transform: rotate(10deg) scale(1.1);
-        }
+            transform: scale(1.1) rotate(5deg);
+            border-color: rgb(213, 189, 80);
+            box-shadow: 0 0 30px rgba(213, 189, 80, 0.6);
+          }
+        
 
         .logo img {
             width: 100%;
             height: 100%;
             object-fit: contain;
+            box-shadow: 0 0 20px rgba(213, 189, 80, 0.3);
         }
 
         .company-info {
@@ -1653,7 +1656,7 @@
 
         .company-name {
             color: white;
-            font-size: 32px;
+            font-size: 1.5rem;
             font-weight: bold;
             margin-bottom: 8px;
             text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
@@ -1672,8 +1675,8 @@
             flex-direction: column;
             align-items: flex-start;
             flex: 1;
-            padding-left: 40px;
-            margin-left: 10%;
+            padding-left: 20px;
+            margin: 5%;
         }
 
         .contact-item {
@@ -1697,7 +1700,7 @@
             font-weight: 600;
             margin-right: 10px;
             min-width: 80px;
-            font-size: 2rem;
+            font-size: 1.6rem;
         }
 
         .contact-value {
@@ -1709,7 +1712,7 @@
             color: inherit;
             text-decoration: none;
             transition: color 0.3s ease;
-            font-size: 1.8rem;
+            font-size: 1.6rem;
         }
 
         .contact-value a:hover {
@@ -1831,39 +1834,6 @@
             }
         }
 
-          @media (min-width: 1025px) {
-              .business-card {
-                display: flex;
-                justify-content: space-between;
-                padding: 40px;
-                gap: 40px;
-              }
-
-              .logo-section {
-                align-items: flex-start;
-                text-align: left;
-              }
-
-              .contact-info {
-                text-align: right;
-                align-items: flex-end;
-                padding-right: 30px;
-              }
-
-              .contact-item {
-                font-size: 18px;
-                margin-bottom: 10px;
-              }
-
-              .contact-label {
-                font-size: 1.6rem;
-              }
-
-              .contact-value a {
-                font-size: 1.4rem;
-                word-break: break-word; /* Avoid overflow */
-              }
-            }
 
         /* TABLETS/IPAD - 720px to 1024px */
         @media (min-width: 720px) and (max-width: 1024px) {
@@ -2009,10 +1979,12 @@
 
             .business-card {
               flex-direction: column;
-              flex-wrap: wrap;
+              flex-wrap: nowrap;
               align-items: center;
               justify-content: flex-start;
-              padding: 10px;
+              padding: 20px;
+              height: auto !important; 
+              min-height: 60vh;
             }
 
             .contact-info {
@@ -2020,8 +1992,8 @@
               flex-direction: column;
               align-items: center;
               text-align: center;
-              padding: 20px;
-              margin-left: 0;
+              padding: 10px;
+              margin-left: 5%;
             }
 
            .contact-item {
@@ -2042,13 +2014,13 @@
             }
 
             .contact-label {
-              font-size: 0.6rem;
+              font-size: 0.9rem;
               margin-bottom: 6px;
               min-width: unset;
             }
 
             .contact-value a {
-              font-size: 0.6rem;
+              font-size: 0.9rem;
               word-break: break-word;
               color: white;
               text-decoration: none;
@@ -2064,11 +2036,13 @@
               gap: 10px;
               text-align: center;
               margin-bottom: 20px;
+              height: auto;
             }
 
             .logo img {
-              width: 60px;
+              width: 100px;
               height: auto;
+              object-fit: contain;
             }
 
             .company-name h1 {
@@ -2085,8 +2059,8 @@
 
             .copyright {
               font-size: 11px;
-              padding: 10px;
+              padding-top: 20px;
               text-align: center;
-              margin-top: 20px;
+              margin-top: 30px;
             }
           }
