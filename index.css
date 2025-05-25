@@ -6,7 +6,9 @@
     body {
       background-color: #001029;
       font-family: sans-serif;
+      height: 100%;
       overflow-x: hidden;
+      overflow-y: auto;
     }
 
 /* Navbar */
@@ -1829,8 +1831,55 @@
             }
         }
 
+          @media (min-width: 1025px) {
+              .business-card {
+                display: flex;
+                justify-content: space-between;
+                padding: 40px;
+                gap: 40px;
+              }
+
+              .logo-section {
+                align-items: flex-start;
+                text-align: left;
+              }
+
+              .contact-info {
+                text-align: right;
+                align-items: flex-end;
+                padding-right: 30px;
+              }
+
+              .contact-item {
+                font-size: 18px;
+                margin-bottom: 10px;
+              }
+
+              .contact-label {
+                font-size: 1.6rem;
+              }
+
+              .contact-value a {
+                font-size: 1.4rem;
+                word-break: break-word; /* Avoid overflow */
+              }
+            }
+
         /* TABLETS/IPAD - 720px to 1024px */
         @media (min-width: 720px) and (max-width: 1024px) {
+            .business-card {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                padding: 20px;
+              }
+          
+            .logo-section, .contact-info {
+                width: 100%;
+                justify-content: center;
+                align-items: center;
+              }
+          
             .contact-info {
                 padding-left: 30px;
                 margin-left: 5%;
@@ -1853,37 +1902,38 @@
             .copyright {
                 font-size: 13px;
             }
+
             .logo-section {
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            gap: 8px;
-          }
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                gap: 8px;
+            }
 
             .logo img {
-              width: 90px; /* adjust as needed */
-              height: auto;
-              margin-bottom: 8px;
+                width: 90px; /* adjust as needed */
+                height: auto;
+                margin-bottom: 8px;
             }
 
             .company-name h1 {
-              font-size: 24px;
-              margin: 0;
+                font-size: 24px;
+                margin: 0;
             }
 
             .tagline {
-              font-size: 14px;
+                font-size: 14px;
             }
 
             .contact-info {
-              text-align: center;
-              font-size: 14px;
+                text-align: center;
+                font-size: 14px;
             }
 
             .copyright {
-              text-align: center;
-              font-size: 13px;
-              margin-top: 15px;
+                text-align: center;
+                font-size: 13px;
+                margin-top: 15px;
             }
           }
 
@@ -1956,69 +2006,87 @@
 
 /* MOBILE PHONES - up to 540px */
         @media (max-width: 539px) {
-            .contact-info {
+
+            .business-card {
+              flex-direction: column;
+              flex-wrap: wrap;
               align-items: center;
-              text-align: center;
-              margin-left: 0;
-              padding: 20px;
+              justify-content: flex-start;
+              padding: 10px;
             }
 
-            .contact-item {
-              font-size: 14px;
+            .contact-info {
+              display: flex;
               flex-direction: column;
+              align-items: center;
               text-align: center;
+              padding: 20px;
+              margin-left: 0;
+            }
+
+           .contact-item {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
               margin-bottom: 16px;
               padding: 12px 10px;
+              background: rgba(255, 255, 255, 0.05);
+              border-radius: 6px;
+              width: 100%;
+              max-width: 300px;
             }
 
             .contact-item:hover {
-              padding-left: 0;
               background: rgba(255, 255, 255, 0.08);
               transform: translateY(-3px);
             }
 
             .contact-label {
               font-size: 1rem;
-              margin: 0 0 6px 0;
+              margin-bottom: 6px;
               min-width: unset;
             }
 
             .contact-value a {
               font-size: 0.95rem;
               word-break: break-word;
+              color: white;
+              text-decoration: none;
             }
 
-            .copyright {
-                font-size: 11px;
-                padding: 0 10px;
-                bottom: 10px;
+            .contact-value a:hover {
+              text-decoration: underline;
             }
+
             .logo-section {
-                flex-direction: column;
-                gap: 10px;
+              flex-direction: column;
+              align-items: center;
+              gap: 10px;
+              text-align: center;
+              margin-bottom: 20px;
             }
 
             .logo img {
-                width: 60px;
+              width: 60px;
+              height: auto;
             }
 
             .company-name h1 {
-                font-size: 1.4rem;
-                text-align: center;
+              font-size: 1.4rem;
+              text-align: center;
+              margin: 0;
             }
 
             .tagline {
-                font-size: 0.9rem;
-                text-align: center;
+              font-size: 0.9rem;
+              text-align: center;
+              margin-top: 5px;
             }
 
-            .contact-item {
-              margin-bottom: 10px;
-            }
-
-            .contact-label,
-            .contact-value a {
-              font-size: 0.95rem;
-              display: inline-block;
+            .copyright {
+              font-size: 11px;
+              padding: 10px;
+              text-align: center;
+              margin-top: 20px;
             }
           }
